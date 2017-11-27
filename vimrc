@@ -4,6 +4,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
 Plug 'altercation/vim-colors-solarized'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'w0rp/ale'
 call plug#end()
 
 " Set the leader key to ,
@@ -48,13 +51,16 @@ nnoremap <S-Tab> :bprev!<CR><Paste>
 let g:airline_solarized_bg='dark'
 let g:airline#extensions#tabline#enabled=1 
 let g:airline_powerline_fonts=1
+" Let ale use the staus line
+let g:airline#extensions#ale#enabled = 1
 set laststatus=2
 
 " Ctrl-P config
 nnoremap <Leader>p :CtrlP<CR>
 nnoremap <Leader>t :CtrlP<CR>
 
-
-
+" ALE Config
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 
