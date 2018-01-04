@@ -7,6 +7,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " Set the leader key to ,
@@ -63,4 +65,5 @@ nnoremap <Leader>t :CtrlP<CR>
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
-
+" NerdTree
+map <leader>n :NERDTreeToggle<CR>
