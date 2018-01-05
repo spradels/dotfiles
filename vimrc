@@ -49,6 +49,9 @@ set shiftwidth=4
 nnoremap <Tab> :bnext!<CR>
 nnoremap <S-Tab> :bprev!<CR><Paste>
 
+" Configure = command
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null 
+
 " Airline config
 let g:airline_solarized_bg='dark'
 let g:airline#extensions#tabline#enabled=1 
