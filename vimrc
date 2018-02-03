@@ -35,6 +35,8 @@ endif
 
 " Let ] clear last search highlights
 :nnoremap ] :nohlsearch<cr>
+set ignorecase
+set smartcase
 
 " Use the system clipboard
 set clipboard=unnamed
