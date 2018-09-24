@@ -5,6 +5,7 @@ colors
 alias ll="ls -alG"
 alias ls="ls -G"
 alias vim="nvim"
+alias carium="cd ~/dev/carium"
 
 export EDITOR=vi
 

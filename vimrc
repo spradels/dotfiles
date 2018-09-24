@@ -6,6 +6,7 @@ Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
 Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
@@ -35,6 +36,7 @@ endif
 
 " Let ] clear last search highlights
 :nnoremap ] :nohlsearch<cr>
+
 set ignorecase
 set smartcase
 
@@ -61,6 +63,9 @@ let g:airline_powerline_fonts=1
 " Let ale use the staus line
 let g:airline#extensions#ale#enabled = 1
 set laststatus=2
+
+" Enable deoplete at startup
+let g:deoplete#enable_at_startup = 1
 
 " Ctrl-P config
 nnoremap <Leader>p :CtrlP<CR>
