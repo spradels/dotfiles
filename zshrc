@@ -22,3 +22,4 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Start tmux by default
 if [ "$TMUX" = "" ]; then tmux; fi
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
